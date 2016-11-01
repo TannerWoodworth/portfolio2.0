@@ -1,0 +1,21 @@
+---
+layout: base_url
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="no-js" lang="en-US" dir="LTR">
+  <head>
+    {% include html-head/head-meta.html %}
+    {% include html-head/head-css.html %}
+    {% include html-head/head-js-top.html %}
+  </head>
+  <body>
+    <div class="bg_content_wrap_1">
+      <div class="bg_content_wrap_2">
+        {% include header.html %}
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+    {% include html-head/head-js-bottom.html %}
+  </body>
+</html>

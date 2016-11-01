@@ -1,0 +1,37 @@
+# Site settings
+name: NOTITLE
+title: NOTITLE
+subtitle: >
+  NOSUBTITLE
+email: dev@informatics-studio.com
+description: > # this means to ignore newlines until "url:"
+ Default Meta Descritpion
+url: "" # the base hostname & protocol for your site
+baseurl: ""
+permalink: pretty
+
+# Custom Build Options
+# Set to 'live' for final build, use 'rake production' (minifies js)
+production: no
+
+gems:
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page_default"
+      weight: 0
+      subtitle: ""
+      refs: []
+      body_class: false
+
+# Include:  Add the following to all pages. permalink: "/example" name of html
+# file without the ".html" should go where example is.
+include: ['_pages']
+
+# Exclude files or directories from being generated to the _site folder.
+exclude: [vendor, "less", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README.txt", "node_modules", ".c9"]

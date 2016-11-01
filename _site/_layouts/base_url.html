@@ -1,0 +1,16 @@
+{% assign confbaseurltoggle = "ON" %}
+{% assign base_url = "" %}
+
+{% if confbaseurltoggle == "ON" %}
+  {% assign canon = page.url | append: "page.html" | split: "/" %}
+  {% for item in canon offset:2 %}
+    {% assign base_url = base_url | append:"../" %}
+  {% endfor %}
+{% else %}
+  {% capture base_url %}{{ "/" }}{% endcapture %}
+{% endif %}
+
+{% assign src_replace = base_url | prepend:'src="' %}
+{% assign href_replace = base_url | prepend:'href="' %}
+
+{{ content | replace:'src="/', src_replace | replace:'href="/', href_replace }}
