@@ -1,5 +1,5 @@
 {
-  "name": "projectname",
+  "name": "Tanner Woodworth Portfolio Site",
   "version": "1.0.0",
   "description": "project description",
   "main": "gulpfile.js",
@@ -8,13 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:informaticsstudio/resourcerepo-jekyll-setup.git"
+    "url": "git@github.com:TannerWoodworth/portfolio2.0.git"
   },
   "keywords": [
-    "Jekyll",
-    "projectname"
+    "Web",
+    "Developer",
+    "Tanner Woodworth"
+    "Tanner Woodworth"
   ],
-  "author": "Informatics Studio",
+  "author": "Tanner Woodworth",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.11.1",

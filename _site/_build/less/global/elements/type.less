@@ -1,0 +1,66 @@
+//====================================================//
+// Typography Styles
+// 
+// Styles relating to typography 
+//====================================================//
+
+// Import Open Sans (Regular, Regular-Italic, Bold)
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700';
+
+
+html {
+	font-size: @base-font-size;
+	font-family: @base-font;
+	line-height: 1.45;
+}
+
+// Headers
+
+.h1, .h2, .h3 {
+	line-height: 1.1;
+	font-weight: 700;
+}
+
+.h1 {
+	font-size: 24px;
+}
+
+.h2 {
+	font-size: 36px;
+}
+
+.h3 {
+	
+}
+
+.section--header {
+	.h2;
+	text-transform: uppercase;
+}
+
+.section--sub-header {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+// Links
+
+a {
+	color: @base-link-color;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: @base-link-color-hover;
+	}
+
+	// &:after {
+	// 	display: block;
+	// 	content: '';
+	// 	position: absolute;
+	// 	height: 10px;
+	// 	width: 5%;
+	// 	background-color: rgba(255,255,2,.3)
+	// }
+}
+

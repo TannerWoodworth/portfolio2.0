@@ -9,12 +9,9 @@ layout: base_url
     {% include html-head/head-js-top.html %}
   </head>
   <body>
-    <div class="bg_content_wrap_1">
-      <div class="bg_content_wrap_2">
-        {% include header.html %}
-        {{ content }}
-      </div>
-    </div>
+    {% include header.html %}
+    {{ content }}
+
     {% include footer.html %}
     {% include html-head/head-js-bottom.html %}
   </body>

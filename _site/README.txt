@@ -77,9 +77,3 @@ GIT IGNORES (.gitignore):
 JEKYLL IGNORES (_config.yml):
 
   exclude: [vendor, "less", "Gemfile", "Gemfile.lock", "gulpfile.js", "package.json", "README.txt", "node_modules", ".c9"]
-  
-
-C9 SITE URL:
-
-https://cga-1501-online-annual-report-informatics-studio.c9users.io/
-

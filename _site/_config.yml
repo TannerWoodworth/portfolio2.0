@@ -1,11 +1,11 @@
 # Site settings
 name: NOTITLE
-title: NOTITLE
+title: Tanner Woodworth – Web Developer
 subtitle: >
   NOSUBTITLE
-email: dev@informatics-studio.com
+email: tannerwoodworth@gmail.com
 description: > # this means to ignore newlines until "url:"
- Default Meta Descritpion
+ Tanner Woodworth is a web developer in Pittsburgh, PA. He specializes in accessible and semantic websites.
 url: "" # the base hostname & protocol for your site
 baseurl: ""
 permalink: pretty
