@@ -44,7 +44,7 @@ html {
 		left: @base-size /2;
 		top: -25px;
 		height: 30px;
-		width: 120px;
+		width: 110px;
 		opacity: 40%;
 	}
 }
@@ -60,16 +60,22 @@ html {
 
 #work .section--header:after {
 	background-color: @work-color-a;
+	width: 100px;
 }
 
 #contact .section--header:after {
 	background-color: @contact-color-a;
+	width: 155px;
 }
 
 .section--sub-header {
 	font-size: 24px;
 	text-transform: uppercase;
 	margin-bottom: 0px;
+}
+
+.-no-highlight:after {
+	display: none;
 }
 
 // Links

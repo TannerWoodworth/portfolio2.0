@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 
 	function onScroll(event){
-	    var scrollPos = $(document).scrollTop()+20;
+	    var scrollPos = $(document).scrollTop()+30;
 
 	    $('.nav-main a').each(function () {
 	    	console.log("menu item");
