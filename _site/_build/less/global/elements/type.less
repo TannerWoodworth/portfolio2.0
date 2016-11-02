@@ -36,6 +36,34 @@ html {
 .section--header {
 	.h2;
 	text-transform: uppercase;
+	margin-bottom: 0px;
+	&:after {
+		display: block;
+		content: '';
+		position: relative;
+		left: @base-size /2;
+		top: -25px;
+		height: 30px;
+		width: 120px;
+		opacity: 40%;
+	}
+}
+
+#about .section--header:after {
+	background-color: @about-color-a;
+}
+
+#process .section--header:after {
+	background-color: @process-color-a;
+	width: 160px;
+}
+
+#work .section--header:after {
+	background-color: @work-color-a;
+}
+
+#contact .section--header:after {
+	background-color: @contact-color-a;
 }
 
 .section--sub-header {
@@ -49,9 +77,9 @@ html {
 a {
 	color: @base-link-color;
 	text-decoration: none;
-
+	transition: background-color 500ms;
 	&:hover, &:focus {
-		color: @base-link-color-hover;
+		
 	}
 
 	// &:after {

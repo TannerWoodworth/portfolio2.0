@@ -25,10 +25,32 @@ html {
 		.nav-item {
 			text-transform: uppercase;
 			list-style: none;
-			// background-color: #fff;
 			margin-bottom: @base-size-sm / 2;
-			padding: 1px;
+			padding: 2px 0;
 
+			&:first-child {
+				a.active {
+					background-color: @about-color;
+				}
+			}
+
+			&:nth-child(2) {
+				a.active {
+					background-color: @process-color;
+				}
+			}
+
+			&:nth-child(3) {
+				a.active {
+					background-color: @work-color;
+				}
+			}
+
+			&:last-child {
+				a.active {
+					background-color: @contact-color;
+				}
+			}
 			a {
 				background-color: #fff;
 				padding: 4px;
