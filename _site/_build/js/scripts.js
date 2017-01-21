@@ -8,4 +8,5 @@
 // ===================================
 
 // @include-static site/site.js
+// @include-static lib/modaal/modaal.min.js
 

@@ -16,6 +16,23 @@ html {
 	position: absolute;
 	right: 100px;
 	z-index: 100;
+	
+	.nav-main-trigger {
+		display: none;
+
+		@media (max-width: 767px) {
+			// display: block;
+			position: fixed;
+			top: 64px;
+			text-transform: uppercase;
+			background-color: #fff;
+			padding: 4px;
+			font-size: @base-font-size;
+			font-family: @base-font;
+			line-height: 1.45;
+			border: 1px solid @brand-grey;
+		}
+	}
 
 	.nav-main-list {
 		position: fixed;
@@ -37,6 +54,7 @@ html {
 			&:nth-child(2) {
 				a.active {
 					background-color: @process-color;
+					color: #fff;
 				}
 			}
 
@@ -51,13 +69,13 @@ html {
 					background-color: @contact-color;
 				}
 			}
+
 			a {
 				background-color: #fff;
 				padding: 4px;
 			}
 		}
 	}
-	
 }
 
 .container {

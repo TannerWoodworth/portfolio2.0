@@ -1,5 +1,5 @@
 {
-  "name": "Tanner Woodworth Portfolio Site",
+  "name": "Portfolio",
   "version": "1.0.0",
   "description": "project description",
   "main": "gulpfile.js",
@@ -13,8 +13,7 @@
   "keywords": [
     "Web",
     "Developer",
-    "Tanner Woodworth"
-    "Tanner Woodworth"
+    "Tanner"
   ],
   "author": "Tanner Woodworth",
   "license": "ISC",
