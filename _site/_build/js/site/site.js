@@ -28,19 +28,27 @@ $(document).ready(function () {
 });
 
 
-	function onScroll(event){
-	    var scrollPos = $(document).scrollTop()+30;
+function onScroll(event){
+    var scrollPos = $(document).scrollTop()+30;
 
-	    $('.nav-main a').each(function () {
-	    	console.log("menu item");
-	        var currLink = $(this);
-	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.nav-main li a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
-	        }
-	    });
-	}
+    $('.nav-main a').each(function () {
+    	console.log("menu item");
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.nav-main li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+
+// Mobile Menu
+// ===========================
+
+$('.fullscreen').modaal({
+    fullscreen: true
+});

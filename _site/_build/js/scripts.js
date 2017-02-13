@@ -7,6 +7,5 @@
 // Site Specific Imports
 // ===================================
 
-// @include-static site/site.js
 // @include-static lib/modaal/modaal.min.js
-
+// @include-static site/site.js
