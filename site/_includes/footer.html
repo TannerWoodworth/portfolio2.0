@@ -1,0 +1,10 @@
+{% if page.url == '/' %}
+  {% assign home_class = ' active' %}
+{% elsif page.url contains 'example/' %}
+  {% assign example_class = ' active' %}
+{% endif %}
+
+<footer class="site-footer container">
+  <p>Copyright &copy; {{ site.time | date: '%Y' }} Tanner Woodworth</p>
+</footer>
+ 

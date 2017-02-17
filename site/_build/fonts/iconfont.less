@@ -1,0 +1,21 @@
+//-------------------//
+// New Mixin Classes //
+//-------------------//
+<% _.each(glyphs, function(glyph) { %>.mix-icon-class('<%= glyph.name %>', "\<%= glyph.codepoint.toString(16).toUpperCase() %>"); 
+<% }); %>
+
+
+//--------------------------//
+// Coditional Mixin Classes //
+//--------------------------//
+<% _.each(glyphs, function(glyph) { %>& when (@name = '<%= glyph.name %>') { content: '\<%= glyph.codepoint.toString(16).toUpperCase() %>'; }
+<% }); %>
+
+//--------------------------//
+// Sample Icons in Buttons  //
+//--------------------------//
+
+<% _.each(glyphs, function(glyph) { %><div style="margin-bottom: 1.5em;"><button class="btn i-after-med i-<%= glyph.name %>">Icon (<%= glyph.name %>)</button></div>
+  <% }); %>
+<% _.each(glyphs, function(glyph) { %><div style="margin-bottom: 1.5em;"><button class="btn i-med i-<%= glyph.name %>">Icon (<%= glyph.name %>)</button></div>
+  <% }); %>

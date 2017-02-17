@@ -1,0 +1,9 @@
+# Ignore
+_site
+node_modules
+.jekyll-metadata
+/files
+/fonts
+/images
+/js
+/css
