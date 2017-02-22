@@ -12,12 +12,11 @@ html {
 	background-color: @main-bg;
 }
 
-.section {
+.section, .blurb {
 	position: relative;
 }
 
 .image-left, .image-right {
-	// position: relative;
 	margin-top: @base-size;
 	margin-bottom: @base-size;
 	display: block;
@@ -35,37 +34,102 @@ html {
 	strong {
 		font-weight: normal;
 	}
-	padding: (@base-size-lg*2) 0;
+	padding: (@base-size-lg*3) 0;
 }
 
 .-image-half {
 	clear: both;
 	width: 100%;
 	position: relative;
-	background-color: #f0f;
-	height: 500px;
+
+	.text-container {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		width: 70%;
+		max-width: 600px;
+		
+	}
+
 	.-left {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 50%;
-
-		background-color: #0f0;
 	}
+
 	.-right {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 50%;
 		right: 0%;
-
-		background-color: #00f;
 	}
 }
 
 // SECTION SPECIFIC Styles
 
+#bio {
+	color: #fff;
+	background-color: @color-purple;
+	height: 800px;
+	
+	.h2 {
+		color: @color-yellow;
+	}
+
+	p {
+		margin-bottom: @base-size;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	.-right {
+		background-image: url("/images/tanner.jpg");
+		background-size: cover;
+	}
+}
+
+
 #blurbs {
 	background-color: @color-yellow;
+	color: @color-purple;
+	padding-top: @base-size-lg;
+	padding-bottom: @base-size-lg;
+}
+
+#work {
+	.h2 {
+		color: @color-green;
+	}
+
+	.text-container {
+		position: relative;
+		padding-top: @base-size-lg;
+		padding-bottom: @base-size-lg;
+	}
+}
+
+#contact {
+	background-color: @color-purple-dark;
+	color: #fff;
+	
+	.h2 {
+		color: @color-orange;
+	}
+
+	.text-container {
+		position: relative;
+		padding-top: @base-size-lg;
+		padding-bottom: @base-size-lg;
+	}
+}
+
+.site-footer {
+	padding: @base-size-sm 0;
 }

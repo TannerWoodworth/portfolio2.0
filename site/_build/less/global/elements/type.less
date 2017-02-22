@@ -18,7 +18,8 @@ html {
 
 .h1, .h2, .h3 {
 	line-height: 1.1;
-	font-weight: 700;
+	font-weight: normal;
+	margin-bottom: @base-size-sm;
 }
 
 .h1 {
@@ -30,17 +31,7 @@ html {
 }
 
 .h3 {
-	
-}
-
-.section--header {
-	.h2;
-	text-transform: uppercase;
-	margin-bottom: 0px;
-}
-
-.-no-highlight:after {
-	display: none;
+	font-size: 24px;
 }
 
 // Links
@@ -54,3 +45,8 @@ a {
 	}
 }
 
+// Body Copy
+
+p {
+	line-height: 1.3;
+}
