@@ -1,3 +1,3 @@
-# Portfolio 2.0
+# New Portfolio site
 
-Unfinished site can be found at http://tannerwoodworth.com/newer
+TODO: Add description

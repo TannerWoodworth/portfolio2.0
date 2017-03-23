@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway');
+
+// GENERAL
+html {
+	font-family: $font-stack-secondary;
+	font-size: 18px;
+	background-color: $color-purple-dark;
+	color: $color-white;
+}
+
+// HEADERS
+
+.h1, .h2 {
+	font-family: $font-stack;
+}
+
+.h1 {
+	font-size: $font-size-large-x;
+}
+
+.h2 {
+	font-size: $font-size-large;
+}
