@@ -42,6 +42,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.view-copy {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 16.66667%;
+  margin-top: 150px; }
+
+.view-blurb {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-top: 25px; }
+
 html {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -52,10 +82,38 @@ html {
   font-family: "Playfair Display", serif; }
 
 .h1 {
-  font-size: 48px; }
+  font-size: 48px;
+  font-weight: bold; }
 
 .h2 {
   font-size: 24px; }
+
+p {
+  line-height: 1.4;
+  margin-top: 25px; }
+
+a {
+  transition: color 150ms;
+  color: #ffffff; }
+  a:hover {
+    color: #292666; }
+
+.view-image {
+  max-width: 100%;
+  margin-top: 25px; }
+
+.blurb-copy {
+  margin-top: 10px;
+  display: block; }
+
+.end-mark {
+  display: block;
+  clear: both;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: 48px;
+  opacity: .2; }
 
 .navigation {
   position: relative;
@@ -91,29 +149,39 @@ html {
   left: 0;
   right: 49%;
   bottom: 49%;
-  background-color: #DE6161;
-  background-image: url(/assets/images/about.jpg); }
+  background-color: #DE6161; }
 
 .nav-work {
   top: 0;
   left: 50%;
   right: 0%;
   bottom: 50%;
-  background-color: #A8D0E6;
-  background-image: url(/assets/images/work.jpg); }
+  background-color: #A8D0E6; }
 
 .nav-resume {
   top: 50%;
   left: 50%;
   right: 0%;
   bottom: 0%;
-  background-color: #303F80;
-  background-image: url(/assets/images/resume.jpg); }
+  background-color: #303F80; }
 
 .nav-contact {
   top: 50%;
   left: 0;
   right: 50%;
   bottom: 0%;
-  background-color: #FAABAB;
-  background-image: url(/assets/images/contact.jpg); }
+  background-color: #FAABAB; }
+
+.nav-back {
+  position: fixed;
+  top: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  border: solid 1px #ffffff;
+  border-radius: 1px;
+  opacity: .5;
+  transition: opacity 150ms; }
+  .nav-back:hover {
+    color: #ffffff;
+    opacity: 1; }

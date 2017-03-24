@@ -1,0 +1,20 @@
+// GRID STUFF
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+  gutter-position: inside,
+);
+
+.container { @include container(1000px); }
+
+.view-copy { 
+	@include span(8 of 12); 
+	@include push(2);
+	margin-top: $base-size-large-xx;
+}
+
+.view-blurb {
+	@include span(4 of 12); 
+	margin-top: $base-size;
+}

@@ -1,0 +1,21 @@
+// IMAGES
+.view-image {
+	max-width: 100%;
+	margin-top: $base-size;
+}
+
+.blurb-copy {
+	margin-top: $base-size-small;
+	display: block;
+}
+
+// MISC
+.end-mark {
+	display: block;
+	clear: both;
+	text-align: center;
+	padding-top: $base-size-large-x;
+	padding-bottom: $base-size-large-x;
+	font-size: $font-size-large-x;
+	opacity: .2;
+}

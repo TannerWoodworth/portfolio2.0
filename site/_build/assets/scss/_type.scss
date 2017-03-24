@@ -9,15 +9,33 @@ html {
 }
 
 // HEADERS
-
 .h1, .h2 {
 	font-family: $font-stack;
 }
 
 .h1 {
 	font-size: $font-size-large-x;
+	font-weight: bold;
 }
 
 .h2 {
 	font-size: $font-size-large;
+}
+
+// BODY COPY
+p {
+	line-height: 1.4;
+	margin-top: $base-size;
+}
+
+// LINKS COPY
+a {
+	// color: $color-purple-dark;
+	// TEMPORARY FIX
+	transition: color 150ms;
+	color: $color-white;
+	&:hover {
+
+		color: $color-purple-alt;
+	}
 }

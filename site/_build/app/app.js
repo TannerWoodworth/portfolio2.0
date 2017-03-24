@@ -40,6 +40,7 @@ myApp.controller('landingController', ['$scope', function($scope) {
 
 myApp.controller('aboutController', ['$scope', function($scope) {
 
+bgColor = '#DE6161';
 
 }]);
 

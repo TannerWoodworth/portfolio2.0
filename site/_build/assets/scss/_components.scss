@@ -40,7 +40,7 @@
 	bottom: 49%;
 	background-color: $color-red;
 
-	background-image: url(/assets/images/about.jpg);
+	// background-image: url(/assets/images/about.jpg);
 }
 
 .nav-work {
@@ -50,7 +50,7 @@
 	bottom: 50%;
 	background-color: $color-blue;
 	
-	background-image: url(/assets/images/work.jpg);
+	// background-image: url(/assets/images/work.jpg);
 }
 
 .nav-resume {
@@ -60,7 +60,7 @@
 	bottom: 0%;
 	background-color: $color-purple;
 
-	background-image: url(/assets/images/resume.jpg);
+	// background-image: url(/assets/images/resume.jpg);
 }
 
 .nav-contact {
@@ -70,5 +70,22 @@
 	bottom: 0%;
 	background-color: $color-pink;
 
-	background-image: url(/assets/images/contact.jpg);
+	// background-image: url(/assets/images/contact.jpg);
+}
+
+.nav-back {
+	position: fixed;
+	top: $base-size - $base-size-small;
+	color: $color-white;
+	text-decoration: none;
+	padding: $base-size-small;
+	border: solid 1px $color-white;
+	border-radius: $br;
+	opacity: .5;
+	transition: opacity 150ms;
+
+	&:hover {
+		color: $color-white;
+		opacity: 1;
+	}
 }
