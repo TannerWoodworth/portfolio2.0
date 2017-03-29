@@ -36,22 +36,23 @@ $locationProvider.hashPrefix('');
 
 myApp.controller('landingController', ['$scope', function($scope) {
 
-
 }]); 
 
 myApp.controller('aboutController', ['$scope', function($scope) {
 
-bgColor = '#DE6161';
+$scope.contColor = { "background-color" : "#DE6161" };
 
 }]);
 
 myApp.controller('workController', ['$scope', function($scope) {
 
+$scope.contColor = { "background-color" : "#A8D0E6" };
 
 }]);
 
 myApp.controller('contactController', ['$scope', function($scope) {
 
+$scope.contColor = { "background-color" : "#FAABAB" };
 
 }]);
 

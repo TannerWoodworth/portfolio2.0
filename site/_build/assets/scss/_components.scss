@@ -73,6 +73,37 @@
 	// background-image: url(/assets/images/contact.jpg);
 }
 
+@media screen and (max-width: $mobile) {
+
+	.nav-item {
+		width: 100%;
+		height: 25%;
+		left: 0;
+		right: 0;
+	}
+
+	.nav-about {
+		top: 0;
+		bottom: 25%;
+	}
+
+	.nav-work {
+		top: 25%;
+		bottom: 50%;
+	}
+
+	.nav-contact {
+		top: 50%;
+		bottom: 75%;
+	}
+
+	.nav-resume {
+		top: 75%;
+		bottom: 0;
+	}
+
+}
+
 .nav-back {
 	position: fixed;
 	top: $base-size - $base-size-small;
@@ -88,4 +119,22 @@
 		color: $color-white;
 		opacity: 1;
 	}
+}
+
+// PROJECT ITEMS
+
+.view-project {
+	@extend .view-blurb;
+	display: block;
+	position: relative;
+	// cursor: pointer;
+	overflow: hidden;
+}
+
+.view-project-image {
+	max-width: 100%;
+}
+
+.view-project-container {
+	position: absolute;
 }

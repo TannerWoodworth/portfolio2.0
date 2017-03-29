@@ -36,8 +36,13 @@ $font-size-large-x: 					48px;
 $font-size-large-xx: 					72px;
 $font-size-large-xxx: 				288px;
 
+// LINK COLORS
+$link-color:									$color-purple-alt;
+$link-color-hover:						lighten($link-color, 15%);
+
+
 // BREAKPOINTS
-// $mobile: 768px;
+$mobile: 1000px;
 
 // MISC
 $br: 													1px;

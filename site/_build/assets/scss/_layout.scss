@@ -18,3 +18,19 @@ $susy: (
 	@include span(4 of 12); 
 	margin-top: $base-size;
 }
+
+@media screen and (max-width: $mobile) {
+	$susy: (
+	  gutters: 15px,
+	);
+
+	.container { 
+		@include container(100%); 
+		padding: $base-size-small;
+	}
+
+	.view-copy, .view-blurb { 
+		@include span(12 of 12); 
+		@include push(0);
+	}
+}

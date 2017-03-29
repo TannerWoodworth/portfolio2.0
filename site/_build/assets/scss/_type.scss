@@ -30,12 +30,9 @@ p {
 
 // LINKS COPY
 a {
-	// color: $color-purple-dark;
-	// TEMPORARY FIX
+	color: $link-color;
 	transition: color 150ms;
-	color: $color-white;
-	&:hover {
-
+		&:hover {
 		color: $color-purple-alt;
 	}
 }
