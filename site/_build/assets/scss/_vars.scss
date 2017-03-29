@@ -40,6 +40,12 @@ $font-size-large-xxx: 				288px;
 $link-color:									$color-purple-alt;
 $link-color-hover:						lighten($link-color, 15%);
 
+// ANIMATIONS
+
+$animation-speed-slow: 			400ms;
+$animation-speed-normal:		250ms;
+$animation-speed-fast: 			150ms;
+
 
 // BREAKPOINTS
 $mobile: 1000px;

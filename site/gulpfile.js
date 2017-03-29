@@ -85,6 +85,12 @@ gulp.task('moveFavicons', [], function() {
     .pipe(gulp.dest('./public'));
 });
 
+gulp.task('moveSvg', [], function() {
+  console.log("Moving SVGs");
+    return gulp.src("./_build/assets/svg/*")
+    .pipe(gulp.dest('./public/assets/svg'));
+});
+
 gulp.task('moveDocs', [], function() {
   console.log("Moving Documents");
     return gulp.src("./_build/assets/docs/*")
@@ -106,7 +112,7 @@ gulp.task('browser-sync', ['build'], function() {
 // GULP TASKS / BUILDS
 //////////////////////////////////////////////////
 
-gulp.task('build',['lint', 'images', 'scss', 'moveFavicons', 'moveDocs', 'copy', 'scripts']);
+gulp.task('build',['lint', 'images', 'scss', 'moveFavicons', 'moveDocs', 'moveSvg', 'copy', 'scripts']);
 
 gulp.task('default', ['browser-sync'], function(){
 	gulp.watch("./_build/**/*.*", ["build"]);

@@ -40,7 +40,7 @@ p {
 // LINKS COPY
 a {
 	color: $link-color;
-	transition: color 150ms;
+	transition: color $animation-speed-fast;
 		&:hover {
 		color: $color-purple-alt;
 	}
