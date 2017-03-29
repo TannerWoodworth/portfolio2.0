@@ -9,13 +9,31 @@
 	display: block;
 }
 
+// LISTS
+.list-bullet {
+	
+	& > li {
+		position: relative;
+		list-style-type: square;
+		list-style-position: inside;
+		left: 0;
+	}
+}
+
 // MISC
 .end-mark {
+	@extend .transparentize;
 	display: block;
 	clear: both;
 	text-align: center;
 	padding-top: $base-size-large-x;
 	padding-bottom: $base-size-large-x;
 	font-size: $font-size-large-x;
-	opacity: .2;
+}
+
+@media screen and (max-width: $mobile) {
+	.end-mark {
+		padding-top: $base-size-large;
+		padding-bottom: $base-size-large;
+	}
 }

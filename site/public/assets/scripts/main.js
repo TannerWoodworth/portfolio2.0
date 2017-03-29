@@ -24,6 +24,11 @@ $locationProvider.hashPrefix('');
 		controller:'workController'
 	})
 
+	.when('/project', {
+		templateUrl:'app/components/project/project.html',
+		controller:'projectController'
+	})
+
 	.when('/contact', {
 		templateUrl:'app/components/contact/contact.html',
 		controller:'contactController'
@@ -49,6 +54,13 @@ myApp.controller('workController', ['$scope', function($scope) {
 $scope.contColor = { "background-color" : "#A8D0E6" };
 
 }]);
+
+myApp.controller('projectController', ['$scope', function($scope) {
+
+$scope.contColor = { "background-color" : "#A8D0E6" };
+
+}]);
+
 
 myApp.controller('contactController', ['$scope', function($scope) {
 

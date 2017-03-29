@@ -136,5 +136,33 @@
 }
 
 .view-project-container {
+	position: relative;
+}
+
+.view-project-overlay {
 	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 95%;
+	height: 100%;
+	background-color: $color-purple-alt;
+	text-align: center;
+}
+
+.view-project-info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+
+	& > strong {
+		margin-bottom: $base-size-small;
+		font-family: $font-stack;
+		font-size: $font-size-large;
+		display: block;
+	}
+
+	& > a {
+		color: $color-white;
+	}
 }

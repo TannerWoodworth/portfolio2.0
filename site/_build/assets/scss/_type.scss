@@ -11,6 +11,7 @@ html {
 // HEADERS
 .h1, .h2 {
 	font-family: $font-stack;
+	line-height: 1.1;
 }
 
 .h1 {
@@ -20,6 +21,14 @@ html {
 
 .h2 {
 	font-size: $font-size-large;
+}
+
+.project-sub {
+	font-size: $font-size-large;
+	margin-top: $base-size-small;
+	display: inline-block;
+	font-family: $font-stack;
+	opacity: .8;
 }
 
 // BODY COPY
