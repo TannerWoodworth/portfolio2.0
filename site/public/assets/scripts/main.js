@@ -71,7 +71,27 @@ $scope.contColor = { "background-color" : "#FAABAB" };
 // FACTORIES / SERVICES
 //////////////////////////////////////////////////
 
+myApp.factory('projects', function() {
+   
+   var projectObject = [];
+
+		return projectObject;
+  
+});
 
 // DIRECTIVES
 //////////////////////////////////////////////////
+
+myApp.directive("projects", ['projects', function(projects) {
+	return {
+		templateUrl: 'directives/projects.html',
+		replace: false,
+		scope: {
+			projectObject: "="
+		},
+		link: function (scope, element, attributes) {
+
+    }
+	};
+}]);
 },{}]},{},[1]);

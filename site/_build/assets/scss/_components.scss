@@ -117,12 +117,13 @@
 	height: 30px;
 	width: 30px;
 	position: fixed;
+	z-index: 5;
 	top: $base-size-large-xx + $base-size-small;
 	fill: $color-white;
 	text-decoration: none;
 	border-radius: $br;
-	opacity: .5;
-	transition: opacity 150ms;
+	opacity: .7;
+	transition: opacity $animation-speed-fast ease-in-out;
 
 	&:hover, &:focus {
 		opacity: 1;
@@ -160,9 +161,9 @@
 	background-color: $color-purple-alt;
 	text-align: center;
 
-	// @media screen and (max-width: $mobile) {
-	// 	width: 100%;
-	// }
+	@media screen and (max-width: $mobile) {
+		width: 98.5%;
+	}
 }
 
 .view-project-info {

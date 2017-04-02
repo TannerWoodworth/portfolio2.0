@@ -10,15 +10,7 @@
 }
 
 // LISTS
-.list-bullet {
-	
-	& > li {
-		position: relative;
-		list-style-type: square;
-		list-style-position: inside;
-		left: 0;
-	}
-}
+
 
 // MISC
 .end-mark {
@@ -31,9 +23,22 @@
 	font-size: $font-size-large-x;
 }
 
-	
+@media screen and (max-width: $mobile) {
 	.end-mark {
 		padding-top: $base-size-large;
 		padding-bottom: $base-size-large;
+	}
+}
+
+.social-icon {
+	display: inline-block;
+	height: $base-size;
+	width: $base-size;
+	margin-top: $base-size-small-x;
+	margin-right: $base-size-small-x;
+	opacity: .7;
+	transition: opacity $animation-speed-fast ease-in-out;
+	&:hover {
+		opacity: 1;
 	}
 }
