@@ -72,7 +72,35 @@ $scope.contColor = { "background-color" : "#076F8A" };
 
 myApp.factory('projects', function() {
    
-   var projectObject = [];
+   var projectObject = [
+   {
+   	"title": "Project 1",
+   	"client": "Client 1",
+   	"year": "Year 1",
+   	"desc": "Desc 1",
+   	"img": "assets/images/about-view.jpg",
+   	"highlights": "Highlights 1",
+   	"tools": "Tools 1"
+   },
+   {
+   	"title": "Project 2",
+   	"client": "Client 2",
+   	"year": "Year 2",
+   	"desc": "Desc 2",
+   	"img": "assets/images/about-view.jpg",
+   	"highlights": "Highlights 2",
+   	"tools": "Tools 2"
+   },
+   {
+   	"title": "Project 3",
+   	"client": "Client 3",
+   	"year": "Year 3",
+   	"desc": "Desc 3",
+   	"img": "assets/images/about-view.jpg",
+   	"highlights": "Highlights 3",
+   	"tools": "Tools 3"
+   }
+   ];
 
 		return projectObject;
   
@@ -83,7 +111,7 @@ myApp.factory('projects', function() {
 
 myApp.directive("projects", ['projects', function(projects) {
 	return {
-		templateUrl: 'directives/projects.html',
+		templateUrl: 'directives/project.html',
 		replace: false,
 		scope: {
 			projectObject: "="
