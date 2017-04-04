@@ -19,6 +19,9 @@
 	text-decoration: none;
 	background-position: center;
 	background-size: cover;
+	border-bottom: 0px;
+	padding-bottom: 0px;
+	opacity: 1;
 
 	> span {
 		position: absolute;
@@ -47,7 +50,7 @@
 	left: 0;
 	right: 49%;
 	bottom: 49%;
-	background-color: $color-red;
+	background-color: $color-1;
 
 	// background-image: url(/assets/images/about.jpg);
 }
@@ -57,7 +60,7 @@
 	left: 50%;
 	right: 0%;
 	bottom: 50%;
-	background-color: $color-blue;
+	background-color: $color-2;
 	
 	// background-image: url(/assets/images/work.jpg);
 }
@@ -67,7 +70,7 @@
 	left: 50%;
 	right: 0%;
 	bottom: 0%;
-	background-color: $color-purple;
+	background-color: $color-4;
 
 	// background-image: url(/assets/images/resume.jpg);
 }
@@ -77,7 +80,7 @@
 	left: 0;
 	right: 50%;
 	bottom: 0%;
-	background-color: $color-pink;
+	background-color: $color-3;
 
 	// background-image: url(/assets/images/contact.jpg);
 }
@@ -154,7 +157,7 @@
 
 .view-project-overlay {
 	position: absolute;
-	top: 0;
+	// top: 0;
 	bottom: 0;
 	width: 95%;
 	height: 100%;

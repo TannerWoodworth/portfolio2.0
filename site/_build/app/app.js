@@ -44,26 +44,26 @@ myApp.controller('landingController', ['$scope', function($scope) {
 
 myApp.controller('aboutController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#DE6161" };
+$scope.contColor = { "background-color" : "#D63932" };
 
 }]);
 
 myApp.controller('workController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#A8D0E6" };
+$scope.contColor = { "background-color" : "#032A2F" };
 
 }]);
 
 myApp.controller('projectController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#A8D0E6" };
+$scope.contColor = { "background-color" : "#032A2F" };
 
 }]);
 
 
 myApp.controller('contactController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#FAABAB" };
+$scope.contColor = { "background-color" : "#076F8A" };
 
 }]);
 

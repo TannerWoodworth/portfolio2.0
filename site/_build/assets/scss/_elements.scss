@@ -6,10 +6,16 @@
 
 .blurb-copy {
 	margin-top: $base-size-small;
-	display: block;
+	display: inline-block;
 }
 
-// LISTS
+// BUTTONS
+.btn {
+	border: $color-white 1px solid;
+	padding: $base-size-small-x;
+	display: inline-block;
+	min-width: 45px;
+}
 
 
 // MISC
@@ -38,6 +44,7 @@
 	margin-right: $base-size-small-x;
 	opacity: .7;
 	transition: opacity $animation-speed-fast ease-in-out;
+	border-bottom: 0px;
 	&:hover {
 		opacity: 1;
 	}

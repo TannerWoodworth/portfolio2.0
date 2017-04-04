@@ -1,14 +1,16 @@
 // SECTION COLORS
-$color-red:										#DE6161;
-$color-pink:									#FAABAB;
-$color-blue:									#A8D0E6;
-$color-purple:								#303F80;
+$color-1:										#D63932;
+$color-2:										#032A2F;
+$color-3:										#076F8A;
+$color-4:										#D0D2C4;
+
 
 // MISC COLORS
-$color-purple-alt:						#292666;
+$color-purple-alt:						#456295;
 $color-purple-dark:						#2B2046;
 $color-gray:									#C0C0C0;
-$color-red-alt:								#F76C6C;
+$color-blue:									#54B0BD;
+$color-1-alt:									#F76C6C;
 
 // OTHER COLORS
 $color-white: 								#ffffff;
@@ -37,12 +39,12 @@ $font-size-large-xx: 					72px;
 $font-size-large-xxx: 				288px;
 
 // LINK COLORS
-$link-color:									$color-purple-alt;
+$link-color:									#D63932;
 $link-color-hover:						lighten($link-color, 15%);
 
 // ANIMATIONS
 
-$animation-speed-slow: 			400ms;
+$animation-speed-slow: 			500ms;
 $animation-speed-normal:		250ms;
 $animation-speed-fast: 			150ms;
 

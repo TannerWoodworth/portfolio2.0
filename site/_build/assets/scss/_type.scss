@@ -4,7 +4,7 @@
 html {
 	font-family: $font-stack-secondary;
 	font-size: 18px;
-	background-color: $color-purple-dark;
+	background-color: $color-blue;
 	color: $color-white;
 }
 
@@ -39,9 +39,13 @@ p {
 
 // LINKS COPY
 a {
-	color: $link-color;
-	transition: color $animation-speed-fast;
+	color: inherit;
+	opacity: .6;
+	transition: opacity $animation-speed-fast;
+	text-decoration: none;
+	border-bottom: $color-white 1px dashed;
+	padding-bottom: 2px;
 		&:hover {
-		color: $color-purple-alt;
+		opacity: 1;
 	}
 }

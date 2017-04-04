@@ -1,5 +1,37 @@
 // GENERAL
 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1; 
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:$animation-speed-slow;
+	-moz-animation-duration:$animation-speed-slow;
+	animation-duration:$animation-speed-slow;
+}
 
 // SPECIFIC
 
+.view-project-overlay {
+	top: -100%;
+	transition: top $animation-speed-normal ease-in-out;
+	transition-delay: 250ms;
+}
+
+.view-project {
+	&:hover {
+		.view-project-overlay {
+			transition-delay: 75ms;
+			top: 0;
+		}
+	}
+}
