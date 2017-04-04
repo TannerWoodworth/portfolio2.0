@@ -1,3 +1,5 @@
 # New Portfolio site
 
-TODO: Add description
+My new portfolio site, currently a work in progress
+
+Live version here: http://tannerwoodworth.com/newerer

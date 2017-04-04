@@ -24,7 +24,7 @@ $locationProvider.hashPrefix('');
 		controller:'workController'
 	})
 
-	.when('/project', {
+	.when('/project/:project', {
 		templateUrl:'app/components/project/project.html',
 		controller:'projectController'
 	})
@@ -45,74 +45,98 @@ myApp.controller('landingController', ['$scope', function($scope) {
 
 myApp.controller('aboutController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#D63932" };
+	$scope.contColor = { "background-color" : "#D63932" };
 
 }]);
 
-myApp.controller('workController', ['$scope', function($scope) {
+myApp.controller('workController', ['$scope', 'projects', function($scope, projects) {
 
 $scope.contColor = { "background-color" : "#032A2F" };
+
+	$scope.projects = projects;
+	console.log($scope.projects);
 
 }]);
 
-myApp.controller('projectController', ['$scope', function($scope) {
+myApp.controller('projectController', ['$scope', '$routeParams', 'projects', function($scope, $routeParams, projects) {
 
-$scope.contColor = { "background-color" : "#032A2F" };
+	$scope.contColor = { "background-color" : "#032A2F" };
 
 }]);
 
 
 myApp.controller('contactController', ['$scope', function($scope) {
 
-$scope.contColor = { "background-color" : "#076F8A" };
+	$scope.contColor = { "background-color" : "#076F8A" };
 
 }]);
 
 // FACTORIES / SERVICES
 //////////////////////////////////////////////////
 
-myApp.factory('projects', function() {
+myApp.service('projects', function() {
    
-   var projectObject = [
+   var portfolioProjects = [
    {
+   	"id": 1,
    	"title": "Project 1",
+   	"url": "project-1",
    	"client": "Client 1",
    	"year": "Year 1",
    	"desc": "Desc 1",
    	"img": "assets/images/about-view.jpg",
+   	"link": "#",
    	"highlights": "Highlights 1",
    	"tools": "Tools 1"
    },
    {
+   	"id": 2,
    	"title": "Project 2",
+   	"url": "project-2",
    	"client": "Client 2",
    	"year": "Year 2",
    	"desc": "Desc 2",
    	"img": "assets/images/about-view.jpg",
+   	"link": "#",
    	"highlights": "Highlights 2",
    	"tools": "Tools 2"
    },
    {
+   	"id": 3,
    	"title": "Project 3",
+   	"url": "project-3",
    	"client": "Client 3",
    	"year": "Year 3",
    	"desc": "Desc 3",
    	"img": "assets/images/about-view.jpg",
+   	"link": "#",
    	"highlights": "Highlights 3",
    	"tools": "Tools 3"
+   },
+   {
+   	"id": 4,
+   	"title": "Project 4",
+   	"url": "project-4",
+   	"client": "Client 4",
+   	"year": "Year 4",
+   	"desc": "Desc 4",
+   	"img": "assets/images/about-view.jpg",
+   	"link": "#",
+   	"highlights": "Highlights 4",
+   	"tools": "Tools 4"
    }
    ];
 
-		return projectObject;
+		return portfolioProjects;
   
 });
 
 // DIRECTIVES
 //////////////////////////////////////////////////
 
-myApp.directive("projects", ['projects', function(projects) {
+myApp.directive("portfolioItem", ['projects', function(projects) {
 	return {
-		templateUrl: 'directives/project.html',
+		templateUrl: 'app/directives/project.html',
 		replace: false,
 		scope: {
 			projectObject: "="
