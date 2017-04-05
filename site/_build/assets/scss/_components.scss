@@ -52,7 +52,7 @@
 	bottom: 49%;
 	background-color: $color-1;
 
-	// background-image: url(/assets/images/about.jpg);
+	background-image: url(/assets/images/about.jpg);
 }
 
 .nav-work {
@@ -62,7 +62,7 @@
 	bottom: 50%;
 	background-color: $color-2;
 	
-	// background-image: url(/assets/images/work.jpg);
+	background-image: url(/assets/images/work.jpg);
 }
 
 .nav-resume {
@@ -72,7 +72,7 @@
 	bottom: 0%;
 	background-color: $color-4;
 
-	// background-image: url(/assets/images/resume.jpg);
+	background-image: url(/assets/images/resume.jpg);
 }
 
 .nav-contact {
@@ -82,7 +82,7 @@
 	bottom: 0%;
 	background-color: $color-3;
 
-	// background-image: url(/assets/images/contact.jpg);
+	background-image: url(/assets/images/contact.jpg);
 }
 
 @media screen and (max-width: $mobile) {

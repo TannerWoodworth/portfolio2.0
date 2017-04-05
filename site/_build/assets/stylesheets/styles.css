@@ -276,28 +276,32 @@ a {
   left: 0;
   right: 49%;
   bottom: 49%;
-  background-color: #D63932; }
+  background-color: #D63932;
+  background-image: url(/assets/images/about.jpg); }
 
 .nav-work {
   top: 0;
   left: 50%;
   right: 0%;
   bottom: 50%;
-  background-color: #032A2F; }
+  background-color: #032A2F;
+  background-image: url(/assets/images/work.jpg); }
 
 .nav-resume {
   top: 50%;
   left: 50%;
   right: 0%;
   bottom: 0%;
-  background-color: #D0D2C4; }
+  background-color: #D0D2C4;
+  background-image: url(/assets/images/resume.jpg); }
 
 .nav-contact {
   top: 50%;
   left: 0;
   right: 50%;
   bottom: 0%;
-  background-color: #076F8A; }
+  background-color: #076F8A;
+  background-image: url(/assets/images/contact.jpg); }
 
 @media screen and (max-width: 1000px) {
   .nav-item {
