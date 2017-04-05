@@ -97,12 +97,12 @@ myApp.service('projects', function() {
    	"url": "flashcard-app",
    	"client": "Side Project",
    	"year": "2017",
-   	"desc": "Desc 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "This website was created simply to learn Angular 1. ",
    	"img": "assets/images/flashcard-app.png",
    	"link": "https://github.com/TannerWoodworth/flashcardApp",
-   	"objective": "Objective 1",
-   	"highlights": "Highlights 1",
-   	"tools": "Tools 1"
+   	"objective": "Create a barebone flashcard application.",
+   	"highlights": "Lack of elements and green color scheme used to promote focus on the content of the cards.",
+   	"tools": "AngularJS, Gulp, Sass, unit tests with Karma and Jasmine (WIP)"
    },
    {
    	"id": 1,
@@ -110,12 +110,12 @@ myApp.service('projects', function() {
    	"url": "acute-network",
    	"client": "Side Project",
    	"year": "2017",
-   	"desc": "Desc 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "The Acute Podcasting Network is an ongoing side project. The focus of the network is to produce high-quality and engaging content across multiple mediums. ",
    	"img": "assets/images/acute-network.png",
    	"link": "/docs/acuteNetwork.pdf",
-   	"objective": "Objective 2",
-   	"highlights": "Highlights 2",
-   	"tools": "Tools 2"
+   	"objective": "Provide a location for listeners to view and listen to content on the Acute network.",
+   	"highlights": "Shows are color coordinated to help separate them and make them more identifiable.",
+   	"tools": "Sketch and Adobe Photoshop"
    },
    {
    	"id": 2,
@@ -123,7 +123,7 @@ myApp.service('projects', function() {
    	"url": "bluepaper-media",
    	"client": "Student Project",
    	"year": "2016",
-   	"desc": "Desc 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "BluePaper media is a fictitious design agency conceived by a group of web design students at Pittsburgh Technical College. For this assignment we were tasked to work as a team to design and develop a fake company website. ",
    	"img": "assets/images/bluepaper.png",
    	"link": "http://tannerwoodworth.com/projects/bpm/index.html",
    	"objective": "To sell services of a fictional web development company.",
@@ -136,12 +136,12 @@ myApp.service('projects', function() {
    	"url": "speedymama-web-hosting",
    	"client": "Student Project",
    	"year": "2016",
-   	"desc": "Desc 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "SpeedyMama Web Hosting is a fictitious company. This site won 'Best in Show' at Pittsburgh Technical College's Spring 2016 portfolio show. The piece was judged based on overall aesthetic, efficiet use of technologies, efficiency of code, and how well the site completed its overall goal.",
    	"img": "assets/images/speedymama.png",
    	"link": "http://tannerwoodworth.github.io/",
-   	"objective": "Objective 4",
-   	"highlights": "Highlights 4",
-   	"tools": "Tools 4"
+   	"objective": "Sell services of a fictitious web hosting company.",
+   	"highlights": "The site was deployed using Gulp. The plugins included minify all code and optomize images for the web. Custom graphs built with the HighCharts library are used to help illustrate with selling of services. Site styled with LESS, which allows shorthand code to be compiled into a readable CSS file for browsers.",
+   	"tools": "Jekyll, Gulp, LESS, and HighCharts"
    },
    {
    	"id": 4,
@@ -149,25 +149,25 @@ myApp.service('projects', function() {
    	"url": "craig-bethel-audition",
    	"client": "Craig Northrup",
    	"year": "2014",
-   	"desc": "Desc 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "Craig approached me about helping him with his audition video for Bethel's worship team. This video project was shot over two days at the Salt Church in Corry, PA.",
    	"img": "assets/images/craig-bethel.jpg",
    	"link": "https://www.youtube.com/watch?v=Xn6yP-B059s",
-   	"objective": "Objective 4",
-   	"highlights": "Highlights 4",
-   	"tools": "Tools 4"
+   	"objective": "Demonstrate musical talent and give brief overview of Craig's background.",
+   	"highlights": "",
+   	"tools": "Final Cut Pro X and Adobe Audition"
    },
    {
    	"id": 5,
-   	"title": "ADM Pack Cover",
+   	"title": "AfroDjMac ALP Cover",
    	"url": "adm-pack-cover",
    	"client": "AfroDjMac",
    	"year": "2014",
-   	"desc": "Desc 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
+   	"desc": "Brian Funk, a.k.a. AfroDjMac, is a musician, producer, songwriter, and Ableton Certified Trainer who loves to share his work and knowledge about music production. He has created numerous Ableton Live Packs to sell (and give out) to fellow musicians. For this project, Brian asked that I create a cover for his 8-bit Drums and 8-Bit Synths ALPs that resembled the packaging for old Nintendo games.",
    	"img": "assets/images/adm.jpg",
    	"link": "https://www.behance.net/gallery/13580671/8-Bit-Drums-(Nintendo-Styled-Game-Case)",
-   	"objective": "Objective 4",
-   	"highlights": "Highlights 4",
-   	"tools": "Tools 4"
+   	"objective": "Create a cover that had the appearence of an old Nindendo system game.",
+   	"highlights": "Custom drawn pixel snare drum. Worn textures used to help give an aged appearence.",
+   	"tools": "Adobe Illustrator and Adobe Photoshop"
    }
    ];
 
