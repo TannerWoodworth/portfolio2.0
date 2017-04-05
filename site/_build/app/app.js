@@ -57,9 +57,11 @@ $scope.contColor = { "background-color" : "#032A2F" };
 
 }]);
 
-myApp.controller('projectController', ['$scope', '$routeParams', 'projects', function($scope, $routeParams, projects) {
+myApp.controller('projectController', ['$scope', '$routeParams', '$anchorScroll', 'projects', function($scope, $routeParams, $anchorScroll, projects) {
 
 	$scope.contColor = { "background-color" : "#032A2F" };
+
+	$anchorScroll();
 
 	$scope.currentProject = projects[$routeParams.projectId];
 	$scope.projectTitle = $scope.currentProject.title;
