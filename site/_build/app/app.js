@@ -126,9 +126,9 @@ myApp.service('projects', function() {
    	"desc": "Desc 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/bluepaper.png",
    	"link": "http://tannerwoodworth.com/projects/bpm/index.html",
-   	"objective": "Objective 3",
-   	"highlights": "Highlights 3",
-   	"tools": "Tools 3"
+   	"objective": "To sell services of a fictional web development company.",
+   	"highlights": "An animated timeline using CSS animations and triggered with JS to show company's process of making websites. Designed with Twitter Bootstrap's framework. The site uses a working PHP-driven form that takes content of the form's fields and concatinates it into an email to send to the company for potential clients to fill out.",
+   	"tools": "Adobe Illustrator, Adobe Photoshop, Twitter Bootstrap, animate.css, and wow.js "
    },
    {
    	"id": 3,
