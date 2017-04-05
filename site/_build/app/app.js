@@ -147,7 +147,7 @@ myApp.service('projects', function() {
    	"id": 4,
    	"title": "Craig Bethel Audition Video",
    	"url": "craig-bethel-audition",
-   	"client": "Craig Northrup",
+   	"client": "Craig Northrop",
    	"year": "2014",
    	"desc": "Craig approached me about helping him with his audition video for Bethel's worship team. This video project was shot over two days at the Salt Church in Corry, PA.",
    	"img": "assets/images/craig-bethel.jpg",
