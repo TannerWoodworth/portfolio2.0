@@ -112,7 +112,7 @@ myApp.service('projects', function() {
    	"year": "2017",
    	"desc": "Desc 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/acute-network.png",
-   	"link": "#",
+   	"link": "/docs/acuteNetwork.pdf",
    	"objective": "Objective 2",
    	"highlights": "Highlights 2",
    	"tools": "Tools 2"
