@@ -70,6 +70,7 @@ myApp.controller('projectController', ['$scope', '$routeParams', '$anchorScroll'
 	$scope.projectDesc = $scope.currentProject.desc;
 	$scope.projectImg = $scope.currentProject.img;
 	$scope.projectHighlights = $scope.currentProject.highlights;
+	$scope.projectObjective = $scope.currentProject.objective;
 	$scope.projectTools = $scope.currentProject.tools;
 	$scope.projectLink = $scope.currentProject.link;
 
@@ -99,6 +100,7 @@ myApp.service('projects', function() {
    	"desc": "Desc 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
+   	"objective": "Objective 1",
    	"highlights": "Highlights 1",
    	"tools": "Tools 1"
    },
@@ -111,6 +113,7 @@ myApp.service('projects', function() {
    	"desc": "Desc 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
+   	"objective": "Objective 2",
    	"highlights": "Highlights 2",
    	"tools": "Tools 2"
    },
@@ -123,6 +126,7 @@ myApp.service('projects', function() {
    	"desc": "Desc 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
+   	"objective": "Objective 3",
    	"highlights": "Highlights 3",
    	"tools": "Tools 3"
    },
@@ -135,6 +139,7 @@ myApp.service('projects', function() {
    	"desc": "Desc 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
+   	"objective": "Objective 4",
    	"highlights": "Highlights 4",
    	"tools": "Tools 4"
    }
