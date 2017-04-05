@@ -15,6 +15,10 @@
 	padding: $base-size-small-x;
 	display: inline-block;
 	min-width: 45px;
+
+	&.-large {
+		padding: $base-size-small;
+	}
 }
 
 

@@ -92,6 +92,10 @@
 		height: 25%;
 		left: 0;
 		right: 0;
+
+		& > span {
+			font-size: $font-size-large-x;
+		}
 	}
 
 	.nav-about {
@@ -143,7 +147,6 @@
 	@extend .view-blurb;
 	display: block;
 	position: relative;
-	// cursor: pointer;
 	overflow: hidden;
 }
 

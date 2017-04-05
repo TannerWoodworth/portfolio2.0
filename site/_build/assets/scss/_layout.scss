@@ -14,6 +14,13 @@ $susy: (
 	margin-top: $base-size-large-xx;
 }
 
+.view-cta {
+	@include span(8 of 12); 
+	@include push(2);
+	margin-top: $base-size-large-x;
+	text-align: center;
+}
+
 .view-blurb {
 	@include span(4 of 12); 
 	margin-top: $base-size;

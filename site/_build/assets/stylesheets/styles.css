@@ -101,6 +101,18 @@ table {
   margin-left: 16.66667%;
   margin-top: 150px; }
 
+.view-cta {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-left: 16.66667%;
+  margin-top: 100px;
+  text-align: center; }
+
 .view-blurb, .view-project {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -194,6 +206,8 @@ a {
   padding: 5px;
   display: inline-block;
   min-width: 45px; }
+  .btn.-large {
+    padding: 10px; }
 
 .end-mark {
   display: block;
@@ -291,6 +305,8 @@ a {
     height: 25%;
     left: 0;
     right: 0; }
+    .nav-item > span {
+      font-size: 48px; }
   .nav-about {
     top: 0;
     bottom: 25%; }

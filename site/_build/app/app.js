@@ -23,7 +23,7 @@ $locationProvider.hashPrefix('');
 		controller:'workController'
 	})
 
-	.when('/project/:project', {
+	.when('/project/:projectId/:projectTitle', {
 		templateUrl:'app/components/project/project.html',
 		controller:'projectController'
 	})
@@ -61,6 +61,18 @@ myApp.controller('projectController', ['$scope', '$routeParams', 'projects', fun
 
 	$scope.contColor = { "background-color" : "#032A2F" };
 
+	$scope.currentProject = projects[$routeParams.projectId];
+	$scope.projectTitle = $scope.currentProject.title;
+	$scope.projectClient = $scope.currentProject.client;
+	$scope.projectYear = $scope.currentProject.year;
+	$scope.projectDesc = $scope.currentProject.desc;
+	$scope.projectImg = $scope.currentProject.img;
+	$scope.projectHighlights = $scope.currentProject.highlights;
+	$scope.projectTools = $scope.currentProject.tools;
+	$scope.projectLink = $scope.currentProject.link;
+
+
+
 }]);
 
 
@@ -77,48 +89,48 @@ myApp.service('projects', function() {
    
    var portfolioProjects = [
    {
-   	"id": 1,
+   	"id": 0,
    	"title": "Project 1",
    	"url": "project-1",
    	"client": "Client 1",
-   	"year": "Year 1",
-   	"desc": "Desc 1",
+   	"year": "2017",
+   	"desc": "Desc 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
    	"highlights": "Highlights 1",
    	"tools": "Tools 1"
    },
    {
-   	"id": 2,
+   	"id": 1,
    	"title": "Project 2",
    	"url": "project-2",
    	"client": "Client 2",
-   	"year": "Year 2",
-   	"desc": "Desc 2",
+   	"year": "2017",
+   	"desc": "Desc 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
    	"highlights": "Highlights 2",
    	"tools": "Tools 2"
    },
    {
-   	"id": 3,
+   	"id": 2,
    	"title": "Project 3",
    	"url": "project-3",
    	"client": "Client 3",
-   	"year": "Year 3",
-   	"desc": "Desc 3",
+   	"year": "2017",
+   	"desc": "Desc 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
    	"highlights": "Highlights 3",
    	"tools": "Tools 3"
    },
    {
-   	"id": 4,
+   	"id": 3,
    	"title": "Project 4",
    	"url": "project-4",
    	"client": "Client 4",
-   	"year": "Year 4",
-   	"desc": "Desc 4",
+   	"year": "2017",
+   	"desc": "Desc 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium adipisci debitis quidem itaque doloribus. Id tenetur quos reiciendis quasi labore quidem a, ab itaque, eum est. Sunt ea nesciunt ut.",
    	"img": "assets/images/about-view.jpg",
    	"link": "#",
    	"highlights": "Highlights 4",
