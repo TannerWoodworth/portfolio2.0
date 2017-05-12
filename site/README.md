@@ -1,5 +1,5 @@
 # New Portfolio site
 
-My new portfolio site, currently a work in progress
+My current portfolio site.
 
-Live version here: http://tannerwoodworth.com/newerer
+Live version here: http://tannerwoodworth.com
