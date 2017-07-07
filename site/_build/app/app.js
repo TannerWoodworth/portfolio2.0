@@ -92,20 +92,46 @@ myApp.service('projects', function() {
    
    var portfolioProjects = [
    {
-   	"id": 0,
-   	"title": "Flashcard App",
-   	"url": "flashcard-app",
-   	"client": "Side Project",
-   	"year": "2017",
-   	"desc": "This website was created simply to learn Angular 1. ",
-   	"img": "assets/images/flashcard-app.png",
-   	"link": "https://github.com/TannerWoodworth/flashcardApp",
-   	"objective": "Create a barebone flashcard application.",
-   	"highlights": "Lack of elements and green color scheme used to promote focus on the content of the cards.",
-   	"tools": "AngularJS, Gulp, Sass, unit tests with Karma and Jasmine (WIP)"
+      "id": 0,
+      "title": "reactTodo",
+      "url": "react-todo",
+      "client": "Side Project",
+      "year": "2017",
+      "desc": "A basic todo app",
+      "img": "assets/images/react-todo.png",
+      "link": "http://tannerwoodworth.com/projects/reactToDo/public",
+      "objective": "Create a basic todo app to learn React.",
+      "highlights": "Use of Redux to maintain state for various app components, unit testing with Karma and Expect, use of Google's Firebase to sync data across devices, ablility to login with GitHub account to keep tasks separate between users",
+      "tools": "React, Foundation, Redux, Webpack, ES6, Karma, Expect"
    },
    {
-   	"id": 1,
+      "id": 1,
+      "title": "reactWeather",
+      "url": "react-weather",
+      "client": "Side Project",
+      "year": "2017",
+      "desc": "A basic weather app to fetch the current temparture using OpenWeather's API.",
+      "img": "assets/images/react-weather.png",
+      "link": "http://tannerwoodworth.com/projects/reactWeather/public",
+      "objective": "Create a barebone flashcard application.",
+      "highlights": "Use of ES6 syntax",
+      "tools": "React, Foundation, Webpack, ES6"
+   },
+   {
+      "id": 2,
+      "title": "Flashcard App",
+      "url": "flashcard-app",
+      "client": "Side Project",
+      "year": "2017",
+      "desc": "This website was created simply to learn Angular 1. ",
+      "img": "assets/images/flashcard-app.png",
+      "link": "https://github.com/TannerWoodworth/flashcardApp",
+      "objective": "Create a barebone flashcard application.",
+      "highlights": "Lack of elements and green color scheme used to promote focus on the content of the cards.",
+      "tools": "AngularJS, Gulp, Sass, unit tests with Karma and Jasmine (WIP)"
+   },
+   {
+   	"id": 3,
    	"title": "Acute Network Site Design",
    	"url": "acute-network",
    	"client": "Side Project",
@@ -118,7 +144,7 @@ myApp.service('projects', function() {
    	"tools": "Sketch and Adobe Photoshop"
    },
    {
-   	"id": 2,
+   	"id": 4,
    	"title": "BluePaper Media",
    	"url": "bluepaper-media",
    	"client": "Student Project",
@@ -131,7 +157,7 @@ myApp.service('projects', function() {
    	"tools": "Adobe Illustrator, Adobe Photoshop, Twitter Bootstrap, animate.css, and wow.js "
    },
    {
-   	"id": 3,
+   	"id": 5,
    	"title": "SpeedyMama Web Hosting",
    	"url": "speedymama-web-hosting",
    	"client": "Student Project",
@@ -144,7 +170,7 @@ myApp.service('projects', function() {
    	"tools": "Jekyll, Gulp, LESS, and HighCharts"
    },
    {
-   	"id": 4,
+   	"id": 6,
    	"title": "Craig Bethel Audition Video",
    	"url": "craig-bethel-audition",
    	"client": "Craig Northrop",
@@ -157,7 +183,7 @@ myApp.service('projects', function() {
    	"tools": "Final Cut Pro X and Adobe Audition"
    },
    {
-   	"id": 5,
+   	"id": 7,
    	"title": "AfroDjMac ALP Cover",
    	"url": "adm-pack-cover",
    	"client": "AfroDjMac",
